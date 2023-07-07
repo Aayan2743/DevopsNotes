@@ -1,0 +1,93 @@
+Git  Notes
+
+To change from ec2 to root
+# sudo su -
+
+# yum update   ; to check the any updates available in current instance
+
+# yum install git ; is used to install git in current ec2 instance
+
+#git --version    ; is used to check git version
+
+#git -v ; also same to check git version
+
+#ssh-keygen ; to generate key 
+
+#git checkout -b <branch_name> ;to create branch and switch to that new branch
+
+#git checkout <branch_name>  ; to swirch from one branch to another
+
+#git branch ; to check current working branch and list of branchs
+
+#git push –set-upstream origin <branch_name>
+	to make connection between from local branch to remote branch we can use this cmd
+
+ #git push -u <origin> <branch_name>
+	same as above set upstram
+
+#git push -u <origin> <loacl_branch_name>: <remote_branch_name>	
+	One done just use git pull
+
+#git remote  ; which shows the remote entaties which available ./git/config
+
+#git remote -v
+
+# git remote add <name> <url> ; the name should be any name  and url must be the 
+remote repositery url
+
+#git remote rm <name> : remove the entity name
+
+#git remote rename <old_name> <new_name>
+
+#git push <remote name>
+
+#git push <remote_name>  --force
+#git remote set-url origin<remote name> <url> ; to update 
+
+#git switch -c <new_branch_name>
+
+#git push -u <origin> <local_branch>:<remote_branch>
+
+#git branch --vv  : to check which branch to link from local to remote
+ 
+**************************************************
+
+Q1 : how to get one branch file into another branch
+	using merge if anothe repo need to pull
+
+Q2 : what is the use of origin
+	origin is a alise name for remote repo url
+
+Q3: what is set upstream origin
+	there are two ways to create upstream 
+	#git push –set-upstream <origin> <branch_name> # will make  a link to current local branch to remote branch if remote dont have branch it will create and make a link
+	                               or
+	#git push -u <origin> <branch_name>
+   here -u flag used for to create link between local banch to remote branch
+ 
+
+Q4: check once git clone done : git remote -v
+         	Checked it default set origin which remote repositery name.
+
+Q5: differenece between set-upstream and add
+	set-upstream is used for to create link between git branch to github branch once done if we push the files all went to default branch which your are working branch.	
+		
+Q6: how to add repositery once done clone
+	Not understand question.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
